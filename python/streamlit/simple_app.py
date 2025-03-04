@@ -41,7 +41,6 @@ st.write(f"You're feeling: {mood}")
 
 # Button
 if st.button("Click me!"):
-    st.balloons()
     st.write("Welcome to Orient Software Development Corporation 😊")
 
 # File Uploader
@@ -51,9 +50,8 @@ if uploaded_file is not None:
     if uploaded_file.type == "text/csv":
         data = pd.read_csv(uploaded_file)
         st.dataframe(data)
-
-# Display a success message
-st.success("Thanks for exploring Streamlit widgets!")
+    st.success("Thanks for exploring Streamlit widgets!")
+    st.balloons()
 
 # Add a footer
 st.markdown("---")
